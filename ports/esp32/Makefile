@@ -343,6 +343,7 @@ SRC_C = \
 	modesp.c \
 	esp32_partition.c \
 	esp32_rmt.c \
+	esp_espnow.c \
 	esp32_ulp.c \
 	modesp32.c \
 	espneopixel.c \
@@ -757,7 +758,7 @@ APP_LD_ARGS += -L$(ESPCOMP)/esp_wifi/lib_esp32 -lcore -lmesh -lnet80211 -lphy -l
 else
 APP_LD_ARGS += $(ESPCOMP)/esp32/libhal.a
 APP_LD_ARGS += -L$(ESPCOMP)/bt/lib -lbtdm_app
-APP_LD_ARGS += -L$(ESPCOMP)/esp32/lib -lcore -lmesh -lnet80211 -lphy -lrtc -lpp -lwpa -lsmartconfig -lcoexist -lwps -lwpa2
+APP_LD_ARGS += -L$(ESPCOMP)/esp32/lib -lcore -lmesh -lnet80211 -lphy -lrtc -lpp -lwpa -lsmartconfig -lcoexist -lwps -lwpa2 -lespnow
 endif
 APP_LD_ARGS += $(OBJ)
 APP_LD_ARGS += $(LIB)
