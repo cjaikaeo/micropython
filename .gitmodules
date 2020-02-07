@@ -30,3 +30,6 @@
 [submodule "lib/mynewt-nimble"]
 	path = lib/mynewt-nimble
 	url = https://github.com/apache/mynewt-nimble.git
+[submodule "ports/esp32/kidbright-mpy"]
+	path = ports/esp32/kidbright-mpy
+	url = https://gitlab.com/cjaikaeo/kidbright-mpy
